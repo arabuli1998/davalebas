@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    background-color: rgba(0, 31, 39, 0.795);
+    
+}
+
+
+.logo{
+    background-color: rgba(4, 15, 37, 0.842);
+    height:auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.logo h1{
+    flex:2 2 250px;
+    color: white;
+}
+.red{
+    color: red;
+}
+.logo i{
+    flex: 2 2 150px;
+    font-size: 50px;
+    color: red;
+    display: flex;
+    align-items: flex-start;
+}
+.logo i p{
+    color: white;
+    font-size: 20px;
+}
+.dir{
+    max-width: 80%;
+    min-width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+.dir input{
+    flex: 2 1 200px;
+    
+}
+.dir button{
+   
+    max-width: 120px;
+    flex: 1 1 50px;
+    background-color:tomato;
+    height: 31px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+.dir input{
+    
+    height: 29px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid tomato;
+    
+}
+
+.dir button:active{
+    height: 27px;
+    color: teal;
+    background-color: tomato;
+}
+#sia{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.clas{
+    width: 23%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex: 1 4 200px;
+    margin-top: 15px;
+    background-color: rgb(19, 19, 19);
+    margin: 10px;
+}
+.clas img{
+    width: 100%;
+    height: auto;
+}
+
+.satauri{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.satauri i{
+    font-size: 50px;
+    color: green;
+}
+.satauri h3{
+    color: white;
+    font-size: 30px;
+}
+.clas h5{
+    margin-top: 5px;
+    color: white;
+   font-weight: 600;
+    margin-bottom: 5px;
+}
+.pp a{
+    margin-top: 5px;
+    text-decoration: none;
+}
+.aud{
+    color: gray;
+    width: 100%;
+}
+.audio{
+    
+width: 100%;
+
+
+}
+
+

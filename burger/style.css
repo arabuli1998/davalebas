@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+header{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.first{
+    color: rgb(117, 117, 117);
+    font-size: 15px;
+    width: 86%;
+    display: flex;
+   
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+.pp{
+    display: flex;
+    flex-wrap: wrap;
+    min-width:200px;
+}
+.first div{
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 60%;
+    width: 100%;
+    flex: 1 2 350px;
+    display: flex;
+    flex-direction: row;
+  
+}
+.first h5{
+    font-weight: 500;
+}
+#second{
+    
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+   display: flex;
+   align-items: center;
+    height: 110px;
+    justify-content: center;
+   
+}
+
+.txt{
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+    max-width: 23.5%;
+    width: 100%;
+   display: flex;
+   min-width: 210px;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+.txt:hover{
+    color: gray;
+}
+#input{
+    display: none;
+}
+#second img{
+    width: 187px;
+    height: 37px;
+}
+#second i{
+    font-size: 26px;
+}
+#second ul{
+    display: flex;
+}
+.sec{
+    width: 86%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 110px;
+    min-width: 400px;
+}
+.menu{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    max-width: 62%;
+    text-align: center;
+    position: relative;
+  
+}
+.menu li:hover{
+    color: orangered;
+}
+.menu > ul{
+    
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    flex: 1 3 400px;
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    
+}
+.menu::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.menu ul li{
+    font-size: 19px;
+}
+.menu{
+    float: right;
+    list-style: none;
+    position: relative;
+}
+
+.menu > ul > li{
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1px;
+    float: left;
+    width: 150px;
+    font-family: poppins;
+    
+    
+}
+.drop:hover{
+    display:block;
+}
+.drop{
+
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    margin: 47px;
+    z-index: 3;
+    
+   align-items: flex-start;
+  
+   width: 250px;
+   background-color: white;
+ 
+}
+
+.drop li{
+    margin-left: 40px;
+    color: rgb(71, 71, 71);
+    font-size: 1px;
+    margin-top: 10px;
+    display: none;
+}
+.menu li:hover > .drop li{
+    display: block;
+}
+
+
+
+.menu li:hover> .drop{
+    perspective: 1000px;
+    border: 0.5px solid rgb(82, 81, 81);
+    
+}
+
+    /*silideri */
+.slide{
+    display: block;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slide button{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(209, 18, 12);
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.slide .text p{
+    color: rgb(221, 219, 219);
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+.slide .text h2{
+    color: black;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+
+.slider{
+    position: relative;
+    width: 100%;
+    
+}
+.slide{
+    height: 500px;
+    display: none;
+    
+    overflow: hidden;
+}
+.win, .ukan{
+    position: absolute;
+    top: 49%;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px;
+    transform: translateY(-50%);
+    font-size:50px;
+    color: red;
+}
+.win{
+    right: 0;
+}
+.win:hover, .ukan:hover{
+    color:rgb(34, 102, 190);
+    font-size: 45px;
+}
+
+.text{
+    position: absolute;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    line-height: 40px;
+    top: 40%;
+    left: 10%;
+    z-index: 1;
+    animation-name: txt;
+    animation-duration: 2s;
+    
+}
+.text h2{
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px;
+}
+.text p{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+img{
+height: 600px;
+width: 100%;
+animation-name:axlo;
+animation-duration: 30s;
+}
+
+@media screen and (max-width: 900px){
+    .slide{
+        height: 500px;
+    }
+    text{
+        line-height: 25px;
+        top:50%;
+        left: 50%;
+        font-size: 25px;
+    }
+    .win{
+        font-size: 40px;
+    }
+    .ukan{
+        font-size: 40px;
+    }
+    .text h2{
+        font-size: 20px;
+    }
+    .text p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 700px){
+    .slide{
+        height: 350px;
+    }
+    .text{
+        line-height: 20px;
+        top:50%;
+        left: 50%;
+        font-size: 18;
+}
+.text h2{
+    font-size: 25px;
+}
+.text p{
+    font-size: 18px;
+}
+.win{
+    font-size: 30px;
+}
+.ukan{
+    font-size: 30px;
+}
+}
+@media screen and (max-width: 500px){
+    .slide{
+        height: 250px;
+    }
+    .text{
+        line-height: 15px;
+        top:50%;
+        left: 50%;
+        font-size: 15px;
+}
+.text h2{
+    font-size: 20px;
+}
+.text p{
+    font-size: 15px;
+}
+.win{
+    font-size: 20px;
+}
+.ukan{
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 300px){
+    .slide{
+        height: 150px;
+    }
+    .text{
+        line-height: 10px;
+        top:15%;
+        left: 15%;
+}
+.text h2{
+    font-size: 15px;
+}
+.text p{
+    font-size: 10px;
+}
+.win{
+    font-size: 15px;
+}
+.ukan{
+    font-size: 15px;
+}
+}
+#look:checked~ .search{
+    opacity: 1;
+    visibility: visible;
+}
+
+.second2{
+    z-index: 5;
+    background-color: red;
+}

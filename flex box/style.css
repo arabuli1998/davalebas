@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: rgb(167, 167, 167);
+    flex-direction:column;
+}
+
+.loggo{
+    justify-content: space-between;
+    margin: 20px 90px;
+    display: flex;
+}
+
+.loggo h4{
+font-size: 1.6rem;
+color: rgb(92, 92, 92);
+}
+
+.loggo ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+.loggo ul li{
+    list-style: none;
+    margin: 0 8px;
+    font-size: 1.1rem;
+    
+}
+.meorexazi{
+    display: flex;
+    margin: 10px 90px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 150px;
+}
+.meorexazi h3{
+    color: rgb(94, 93, 93);
+}
+.box{
+    margin: 5px;
+    display: flex;
+    flex-grow: 3;
+    background-color: rgb(95, 95, 95);
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    min-height: 100px;
+}
+
+    
+.textarea{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 300px;
+    min-height: 100px;
+    align-items: flex-start;
+}
+.textarea p{
+    width: 100%;
+    height: auto;
+}
+.textarea h3{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+/* ak mtavrdeba header */
+.bodi{
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    justify-content: space-evenly;
+    max-width: 900px;
+    display: flex;
+    margin: 30px 90px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    flex-basis: 230px;
+    min-height: 230px;
+    background-color: rgb(153, 153, 153);
+}
+.box2 p{
+    font-size: 15pt;
+}
+.bolo{
+    max-width: 720px;
+    background-color: rgb(153, 153, 153);
+    margin: 0 90px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+}
+
+.footer{
+    max-width: 900px;
+    width: 100%;
+    background-color: rgb(153, 153, 153);
+}
+.saboloo{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 90px;
+}
+.saboloo ul{
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+}
+.saboloo ul li{
+    margin: 0 5px;
+    display: flex;
+}
+.saboloo h4{
+    flex-grow: 1;
+    text-align: end;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+      <title>Music For You</title>
+</head>
+<body>
+    
+     <div class="logo"> 
+    <i class="fab fa-accusoft"></i>
+  <h1>Search any music</h1>
+</div>
+
+
+  <div class="dir">
+
+  <input type="text" name="" id="music"
+  placeholder="Write here,what are you searching...">
+  <button class="btn" id="btn">SEARCH</button>
+</div>
+
+<div id="sia">
+
+</div>
+  
+  <script>
+
+let search = document.getElementById('music').value;
+const shedegi = document.getElementById('sia');
+let btn = document.getElementById('btn');
+
+
+
+
+btn.addEventListener('click', ipove);
+
+
+
+function ipove() {
+    let search = document.getElementById('music').value;
+    
+    fetch(`https://itunes.apple.com/search?term=${search}`)
+    .then(response => response.json())
+    .then((data) => {
+     
+      chasvape(data);
+    })
+    }
+      
+function chasvape(data){
+  let tmp = '';
+  data.results.forEach(results => {
+    tmp+=`<div class="clas">
+      <img src="${results.artworkUrl100}" alt="">
+      <p class="pp"><a href="${results.artistName}"> ${results.artistName}</a></p>
+      <h5>${results.trackName}</h5>
+      <audio controls class="audio">
+                         <source  src="${results.previewUrl}">
+            </audio>
+            
+      </div>
+      `
+    
+  });
+  shedegi.innerHTML=tmp;
+}
+         /*           
+            <audio controls>
+                         <source src="${element.previewUrl}">
+            </audio>
+                 */    
+       
+  </script>
+</body>
+</html>
